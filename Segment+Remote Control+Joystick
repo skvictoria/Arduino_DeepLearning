@@ -84,42 +84,62 @@ void loop()
           switch(results.value){
             case 0x00FF6897: // Key 0
                 NumberDisplay(0);
+                temp = 0;
                 delay(2000);
                 break;
             case 0x00FF30CF: // Key 1
                 NumberDisplay(1);
+                temp = 1;
                 delay(2000);
                 break;
             case 0x00FF18E7: // Key 2
                 NumberDisplay(2);
+                temp = 2;
                 delay(2000);
                 break;
             case 0x00FF7A85: // Key 3
                 NumberDisplay(3);
+                temp = 3;
                 delay(2000);
                 break;
             case 0x00FF10EF: // Key 4
                 NumberDisplay(4);
+                temp = 4;
                 delay(2000);
                 break;
             case 0x00FF38C7: // Key 5
                 NumberDisplay(5);
+                temp = 5;
                 delay(2000);
                 break;
             case 0x00FF5AA5: // Key 6
                 NumberDisplay(6);
+                temp = 6;
                 delay(2000);
                 break;
             case 0x00FF42BD: // Key 7
                 NumberDisplay(7);
+                temp = 7;
                 delay(2000);
                 break;
             case 0x00FF4AB5: // Key 8
                 NumberDisplay(8);
+                temp = 8;
                 delay(2000);
                 break;
             case 0x00FF52AD: // Key 9
                 NumberDisplay(9);
+                temp = 9;
+                delay(2000);
+                break;
+            case 0x00FFA857:
+                temp++;
+                NumberDisplay(temp);
+                delay(2000);
+                break;
+            case 0x00FFe01F:
+                temp--;
+                NumberDisplay(temp);
                 delay(2000);
                 break;
             default:
